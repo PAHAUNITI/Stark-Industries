@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stark Industries - Технологии будущего уже сегодня</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="reactor-loader"></div>
+        <p>Инициализация систем Stark...</p>
+    </div>
+
+    <!-- Чат-бот -->
+    <div id="ai-chat">
+        <div class="chat-header">
+            <div class="chat-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chat-info">
+                <h4>J.A.R.V.I.S.</h4>
+                <p>Искусственный интеллект Stark Industries</p>
+            </div>
+            <button id="close-chat" class="chat-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <p>Добро пожаловать в Stark Industries! Я J.A.R.V.I.S. - искусственный интеллект, созданный Тони Старком. Чем могу помочь?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Введите ваше сообщение...">
+            <button id="send-message" class="chat-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <button id="open-chat" class="floating-chat-btn">
+        <i class="fas fa-robot"></i>
+        <span class="chat-notification"></span>
+    </button>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="half-star_10079615.png" alt="Stark Industries">
+                <div class="logo-text">STARK INDUSTRIES</div>
+            </div>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#history">История</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#tech">Технологии</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#reactor">ARC реактор</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animated-title">STARK INDUSTRIES</h1>
+            <p class="subtitle">Создаем технологии, которые меняют мир. От оружия массового поражения до чистой энергии будущего.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn">Наши проекты</a>
+                <a href="#contact" class="btn btn-outline">Связаться с нами</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <h3>80+</h3>
+                    <p>Лет инноваций</p>
+                </div>
+                <div class="hero-stat">
+                    <h3>5,000+</h3>
+                    <p>Сотрудников worldwide</p>
+                </div>
+                <div class="hero-stat">
+                    <h3>$20.3B</h3>
+                    <p>Годовой доход</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О компании</h2>
+            <p class="section-subtitle">Stark Industries - глобальный конгломерат, основанный Говардом Старком. Под руководством Тони Старка компания превратилась в ведущего мирового инноватора.</p>
+            
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p><strong>Stark Industries</strong> - глобальный конгломерат, основанный Говардом Старком в 1940 году. Под руководством Тони Старка компания прошла трансформацию от производителя оружия до пионера в области чистых технологий и устойчивого развития.</p>
+                    
+                    <h3>Наша миссия</h3>
+                    <p>Создавать передовые технологии, которые служат человечеству, защищают планету и открывают новые горизонты для всего человечества. Мы верим, что технологии должны улучшать жизнь, а не разрушать её.</p>
+                    
+                    <h3>Философия Тони Старка</h3>
+                    <p>"Лучшее оружие - то, которое никогда не придется использовать. Технология должна служить человечеству, а не уничтожать его. Мы создаем будущее, в котором хотим жить."</p>
+                    
+                    <h3>Направления деятельности</h3>
+                    <p>Мы работаем в области возобновляемой энергетики, искусственного интеллекта, аэрокосмических технологий, нанотехнологий, робототехники и биомедицинских исследований.</p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>156+</h3>
+                        <p>Патентов Тони Старка</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Стран присутствия</p>
+                    </div>
+                    <div class="stat">
+                        <h3>12</h3>
+                        <p>Нобелевских премий</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="history" class="history">
+        <div class="container">
+            <h2>История компании</h2>
+            <p class="section-subtitle">От скромного начала до глобального технологического лидера</p>
+            
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1940</div>
+                        <h3>Основание компании</h3>
+                        <p>Говард Старк основал Stark Industries как производителя оружия для армии США во время Второй мировой войны.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1974</div>
+                        <h3>Первая выставка Stark Expo</h3>
+                        <p>Говард Старк представил технологию ARC реактора на первой выставке Stark Expo, заложив основу для чистой энергии будущего.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1991</div>
+                        <h3>Трагическая гибель основателей</h3>
+                        <p>Говард и Мария Старк погибли в автокатастрофе, оставив компанию своему сыну Тони.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2010</div>
+                        <h3>Тони Старк объявляет о прекращении производства оружия</h3>
+                        <p>После плена в Афганистане Тони Старк кардинально меняет направление компании, прекращая производство оружия.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2012</div>
+                        <h3>Запуск программы "Железный человек"</h3>
+                        <p>Stark Industries начинает разработку передовых технологий для защиты мира, включая броню Железного человека.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2015</div>
+                        <h3>Создание Альтрона и катастрофа в Соковии</h3>
+                        <p>Попытка создания глобальной системы защиты приводит к катастрофическим последствиям и разделению Мстителей.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2018</div>
+                        <h3>Вторжение Таноса и Блинк</h3>
+                        <p>Тони Старк сталкивается с угрозой вселенского масштаба, что приводит к исчезновению половины вселенной.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3>Восстановление и новые горизонты</h3>
+                        <p>После восстановления вселенной Stark Industries удваивает усилия по созданию технологий для улучшения жизни на Земле и за её пределами.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Команда лидеров</h2>
+            <p class="section-subtitle">Гении, визионеры и пионеры, определяющие будущее технологий</p>
+            
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <div class="member-photo">
+                        <img src="9498373d4ba378d696364db5397b50c6.jpg" alt="Тони Старк">
+                    </div>
+                    <div class="member-info">
+                        <h3>Тони Старк</h3>
+                        <p class="position">Генеральный директор и Главный технолог</p>
+                        <p class="bio">Гений, миллиардер, плейбой, филантроп. Выпускник MIT в 17 лет. Изобретатель брони Железного человека и технологии ARC реактора.</p>
+                        <div class="member-stats">
+                            <span>156+ патентов</span>
+                            <span>3 нобелевские премии</span>
+                            <span>Основатель Мстителей</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-photo">
+                        <img src="c68da3ba30480bf1a8d04ec50c2345d8.webp" alt="Пеппер Поттс">
+                    </div>
+                    <div class="member-info">
+                        <h3>Вирджиния "Пеппер" Поттс</h3>
+                        <p class="position">Президент компании</p>
+                        <p class="bio">Бывший личный ассистент Тони Старка, сейчас управляет операционной деятельностью компании. Окончила Гарвардскую школу бизнеса.</p>
+                        <div class="member-stats">
+                            <span>CEO Stark Industries</span>
+                            <span>Спасение Мстителей</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-photo">
+                        <img src="scale_2400.jfif" alt="Хэппи Хоган">
+                    </div>
+                    <div class="member-info">
+                        <h3>Гарольд "Хэппи" Хоган</h3>
+                        <p class="position">Глава безопасности</p>
+                        <p class="bio">Бывший боксер и личный водитель Тони Старка. Отвечает за безопасность всех объектов Stark Industries по всему миру.</p>
+                        <div class="member-stats">
+                            <span>Бывший боксер</span>
+                            <span>Глава безопасности</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="tech">
+        <div class="container">
+            <h2>Ключевые технологии</h2>
+            <p class="section-subtitle">Передовые разработки, определяющие будущее человечества</p>
+            
+            <div class="tech-grid">
+                <div class="tech-card fade-in">
+                    <div class="tech-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>ARC реактор</h3>
+                    <p>Чистый, компактный и невероятно мощный источник энергии, способный обеспечить электричеством целый город.</p>
+                </div>
+                
+                <div class="tech-card fade-in">
+                    <div class="tech-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Искусственный интеллект</h3>
+                    <p>Передовые системы ИИ, включая J.A.R.V.I.S. и F.R.I.D.A.Y., обеспечивающие управление технологиями Stark.</p>
+                </div>
+                
+                <div class="tech-card fade-in">
+                    <div class="tech-icon">
+                        <i class="fas fa-space-shuttle"></i>
+                    </div>
+                    <h3>Космические технологии</h3>
+                    <p>Передовые разработки для освоения космоса, включая двигатели для межпланетных перелетов.</p>
+                </div>
+                
+                <div class="tech-card fade-in">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Нанотехнологии</h3>
+                    <p>Броня Mark L с использованием нанотехнологий, способная адаптироваться к любым условиям боя.</p>
+                </div>
+                
+                <div class="tech-card fade-in">
+                    <div class="tech-icon">
+                        <i class="fas fa-biohazard"></i>
+                    </div>
+                    <h3>Биомедицинские исследования</h3>
+                    <p>Разработка передовых протезов и медицинских технологий для улучшения качества жизни.</p>
+                </div>
+                
+                <div class="tech-card fade-in">
+                    <div class="tech-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Чистая энергия</h3>
+                    <p>Технологии возобновляемой энергии, снижающие зависимость человечества от ископаемого топлива.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Наши проекты</h2>
+            <p class="section-subtitle">Инновационные решения, меняющие представление о возможном</p>
+            
+            <div class="project-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="ракета.jpg" alt="Космическая программа Stark">
+                        <div class="project-badge">В РАЗРАБОТКЕ</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Космическая программа Stark</h3>
+                        <p>Передовые технологии для освоения космоса и создания устойчивых космических колоний. Включает разработку новых двигателей, систем жизнеобеспечения и защиты от космической радиации.</p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <h4>12</h4>
+                                <p>Запусков</p>
+                            </div>
+                            <div class="project-stat">
+                                <h4>5</h4>
+                                <p>Патентов</p>
+                            </div>
+                            <div class="project-stat">
+                                <h4>2025</h4>
+                                <p>Завершение</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="броня.jpg" alt="Броня Железного человека">
+                        <div class="project-badge">СОВЕРШЕНСТВЕННО СЕКРЕТНО</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Броня Mark Series</h3>
+                        <p>Высокотехнологичные боевые костюмы, обеспечивающие защиту и расширенные возможности. От Mark I до Mark L с нанотехнологиями - постоянное совершенствование и инновации.</p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <h4>85</h4>
+                                <p>Модификаций</p>
+                            </div>
+                            <div class="project-stat">
+                                <h4>12</h4>
+                                <p>Спецспособностей</p>
+                            </div>
+                            <div class="project-stat">
+                                <h4>99.7%</h4>
+                                <p>Надежность</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="linus-geisler-reactor-02.jpg" alt="Clean Energy Initiative">
+                        <div class="project-badge">ЗАПУЩЕН</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Инициатива чистой энергии</h3>
+                        <p>Глобальный проект по замене традиционных источников энергии на экологически чистые технологии на основе ARC реактора. Уже обеспечивает энергией несколько крупных городов.</p>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <h4>7</h4>
+                                <p>Городов</p>
+                            </div>
+                            <div class="project-stat">
+                                <h4>3.2M</h4>
+                                <p>Домовладений</p>
+                            </div>
+                            <div class="project-stat">
+                                <h4>0</h4>
+                                <p>Выбросов CO2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reactor" class="reactor-section">
+        <div class="container">
+            <h2>ARC реактор</h2>
+            <p class="reactor-description">Чистая энергия будущего, способная обеспечить электричеством целый город. Компактный, эффективный и экологически безопасный источник энергии.</p>
+            <div class="reactor-container fade-in">
+                <div class="reactor-3d" id="reactor3d">
+                    <div class="sketchfab-embed-wrapper">
+                        <iframe 
+                            title="ARC Reactor Tony Stark High Poly" 
+                            frameborder="0" 
+                            allowfullscreen 
+                            mozallowfullscreen="true" 
+                            webkitallowfullscreen="true" 
+                            allow="autoplay; fullscreen; xr-spatial-tracking" 
+                            xr-spatial-tracking 
+                            execution-while-out-of-viewport 
+                            execution-while-not-rendered 
+                            web-share 
+                            src="https://sketchfab.com/models/7c57e1f6b3034194a1e3c8abb3a49df2/embed?autospin=1&autostart=1&ui_controls=1&ui_infos=1&ui_stop=1&ui_theatre=1&ui_watermark=0&ui_watermark_link=0">
+                        </iframe>
+                    </div>
+                </div>
+                <p class="reactor-hint">Используйте курсор для взаимодействия с 3D моделью</p>
+                <div class="reactor-controls">
+                    <button id="rotateBtn" class="btn">Остановить вращение</button>
+                    <button id="resetBtn" class="btn btn-outline">Сброс</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p class="section-subtitle">Свяжитесь с нами для сотрудничества, инвестиций или вопросов о наших технологиях</p>
+            
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Stark Industries</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 1 Industrial Drive, Stark Complex, Seattle, WA 98108</p>
+                    <p><i class="fas fa-envelope"></i> info@starkindustries.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-globe"></i> www.starkindustries.com</p>
+                    
+                    <h3 style="margin-top: 30px;">Основные объекты</h3>
+                    <p><i class="fas fa-building"></i> Stark Tower, Нью-Йорк</p>
+                    <p><i class="fas fa-industry"></i> Завод Stark, Сиэтл</p>
+                    <p><i class="fas fa-flask"></i> Исследовательский центр, Швейцария</p>
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Ваше имя" required>
+                        <input type="email" id="email" placeholder="Ваш email" required>
+                        <input type="text" id="subject" placeholder="Тема" required>
+                        <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+                        <button type="submit" class="btn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Stark Industries</h3>
+                    <p>Создаем будущее, в котором хотим жить. Технологии для человечества.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Технологии</h3>
+                    <ul>
+                        <li><a href="#">ARC реактор</a></li>
+                        <li><a href="#">Искусственный интеллект</a></li>
+                        <li><a href="#">Нанотехнологии</a></li>
+                        <li><a href="#">Космические разработки</a></li>
+                        <li><a href="#">Биомедицина</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Компания</h3>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">История</a></li>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Правовая информация</h3>
+                    <ul>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Правовые положения</a></li>
+                        <li><a href="#">Соответствие требованиям</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Stark Industries. Все права защищены. "Stark Industries", "Железный человек" и связанные логотипы являются собственностью Stark Industries.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="ai-chat.js"></script>
+    <script src="email-service.js"></script>
+</body>
+</html>
